@@ -1,3 +1,5 @@
+/** @format */
+
 function add(num1, num2) {
   return num1 + num2;
 }
@@ -23,10 +25,10 @@ function addMoreNumbers(num1, num2) {
 
 console.log(addMoreNumbers(1, 5));
 
-const hobbies = ['Sports', 'Cooking'];
+const hobbies = ["Sports", "Cooking"];
 
 function printHobbies(h) {
-  h.push('NEW HOBBY');
+  h.push("NEW HOBBY");
   console.log(h);
 }
 
@@ -51,19 +53,18 @@ const calculateIncomeTaxAmount = createTaxCalculator(0.25);
 console.log(calculateVatAmount(100));
 console.log(calculateVatAmount(200));
 
-let userName = 'Max';
+let userName = "Max";
 
 function greetUser() {
   // let name = 'Anna';
-  console.log('Hi ' + name);
+  console.log("Hi " + name);
 }
 
-let name = 'Maximilian';
+let name = "Maximilian";
 
-userName = 'Manuel';
+userName = "Manuel";
 
 greetUser();
-
 
 // function powerOf(x, n) {
 //   let result = 1;
@@ -75,9 +76,7 @@ greetUser();
 //   return result;
 // }
 
-
 function powerOf(x, n) {
-
   // if (n === 1) {
   //   return x;
   // }
@@ -89,28 +88,28 @@ function powerOf(x, n) {
 console.log(powerOf(2, 3)); // 2 * 2 * 2
 
 const myself = {
-  name: 'Max',
+  name: "Max",
   friends: [
     {
-      name: 'Manuel',
+      name: "Manuel",
       friends: [
         {
-          name: 'Chris',
+          name: "Chris",
           friends: [
             {
-              name: 'Hari'
+              name: "Hari",
             },
             {
-              name: 'Amilia'
-            }
-          ]
-        }
-      ]
+              name: "Amilia",
+            },
+          ],
+        },
+      ],
     },
     {
-      name: 'Julia'
-    }
-  ]
+      name: "Julia",
+    },
+  ],
 };
 
 function getFriendNames(person) {
@@ -119,12 +118,12 @@ function getFriendNames(person) {
   if (!person.friends) {
     return [];
   }
-  
+
   for (const friend of person.friends) {
     collectedNames.push(friend.name);
     collectedNames.push(...getFriendNames(friend));
   }
-  
+
   return collectedNames;
 }
 
